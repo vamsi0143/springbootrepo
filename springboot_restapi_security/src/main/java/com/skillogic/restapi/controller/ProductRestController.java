@@ -14,6 +14,7 @@ import com.skillogic.restapi.model.Product;
 public class ProductRestController {
 	@GetMapping("/allproducts")
 	public List<Product> allProducts(){
+		System.out.println("ProductRestController")
 		List<Product> list = new ArrayList<>();
 		Product p1 = new Product(1, "Laptop", 1, 50000);
 		Product p2 = new Product(2, "Mobile", 2, 30000);
